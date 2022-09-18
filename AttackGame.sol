@@ -1,6 +1,18 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.4;
 
+// simple game I (fettah) created 
+// any one can join the game . when joining you select a name 
+// you get 5-10 ATK power at random 
+// you get 5-10 DEF power at random
+// you get 100 HP 
+// you can attack other players . as long as your HP over 0
+// in each attack if your attack is more that the def of the victim 
+// you get more ATK points and loss some HP and victim losses lots of HP
+// if your ATK is lower than def HP 
+// you get more damage the victim gets small damage and gets extra def points and you get not ATK extra points . 
+// when your HP reaches 0 you are out of the game .
+
 contract AttackGame {
     address public minter;
     // each player have Attack defince and balance . and joined flag to know if he is new or not
