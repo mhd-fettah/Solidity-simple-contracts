@@ -171,11 +171,11 @@
 	},
 	"sources": {
 		"AttackGame.sol": {
-			"keccak256": "0x3d248ab33f699d6685aa8b44af1a72b695bb7ece883c3f88dd38617cd1db9537",
+			"keccak256": "0x22e041774d42251568ca0164333dff9fcd200336307a32b3aa357e30524c10d0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://71300feffbaa55e4d8240478204b9524c0aafd8eb40e04dbb575144d7da58c17",
-				"dweb:/ipfs/QmWxn3CYpFPRY7fLiSgpkJDFAnLdfSiwZQrxXPd8WaBM8N"
+				"bzz-raw://994769af8c16ef33d71208607c456e7548786434303702fa1c0ecbcf26c1340d",
+				"dweb:/ipfs/QmRqWXHba1vCKXfMQLhFJzfz89n3rmYyvits3ftPRZeAtP"
 			]
 		}
 	},

@@ -1,16 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.4;
 
-/*
-TODO 
-- improve the game to be a full project .
-- when joining player pays BNB fee that added to prize pool.
-- each round have a time limit. at the end of the time limit the prizes distributed to the top players . 
-- share of the prizes go to devloper . 
-- share of the prize pool goes to the next stage . 
-- image of each player generated using AI in use of the player name they will choose . 
-*/
-
 // simple game I (fettah) created 
 // any one can join the game . when joining you select a name 
 // you get 5-10 ATK power at random 
