@@ -3,7 +3,7 @@ pragma solidity >=0.4.16 <0.9.0;
 
 //this simple contract store data as int in StoreData var 
 // you can get the data via get() function 
-// and set the data via Set(uint x) function 
+// and set the data via Set(uint x) function
 contract SimpleStorage {
     uint storedData;
 

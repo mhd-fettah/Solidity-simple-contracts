@@ -7,8 +7,13 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "checkNumbers",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
 					{
 						"internalType": "uint256",
 						"name": "",
@@ -22,7 +27,12 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "x",
+						"name": "VarfirstNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "VarSecondNumber",
 						"type": "uint256"
 					}
 				],
@@ -45,7 +55,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"simpleStorage.sol": "SimpleStorage"
+			"SimpleMath.sol": "SimpleStorage"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +69,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"simpleStorage.sol": {
-			"keccak256": "0x1dc0985a45559798c0cf1c894d1a7a19270b052f9e84cacea0e898836ec9ce7c",
+		"SimpleMath.sol": {
+			"keccak256": "0x707f755dcaa5d62b5bc7a19e945285cfd5dc269ebabb89279d3bfe185e251f1e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://de407ffb1e478ccb74910ae7d0442907acc09acd6a6467c2f05626242ad2d924",
-				"dweb:/ipfs/QmYBfCc7vkHZHHLxTbsJYgxSa7GQeeF5G3mEbgSDvG1SGH"
+				"bzz-raw://251cfe0677b96919faf22ee73e291b48afa9d4b2782505a9fd129e0b7fcb4d23",
+				"dweb:/ipfs/QmTqtX6qEqNLx9DvU8gLWtDMKbFsjvz9UTwPa877SKE2JJ"
 			]
 		}
 	},
