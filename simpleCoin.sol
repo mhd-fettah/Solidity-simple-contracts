@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.4;
 
+//contact : Fettah@n3xt.tech
+//crypto wallet : Fettah@crypto
+
 contract Coin {
     address public minter;
     // any address (Wallet) can have uint balance.

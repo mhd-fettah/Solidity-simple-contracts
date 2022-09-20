@@ -1,5 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
+
+//contact : Fettah@n3xt.tech
+//crypto wallet : Fettah@crypto
+
 contract SimpleVoting {
     
     // struct to declare somthing like an object with many sub elements . 

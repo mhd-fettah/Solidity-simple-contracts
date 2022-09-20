@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.4;
 
+//contact : Fettah@n3xt.tech
+//crypto wallet : Fettah@crypto
+
 contract MultiBalance {
     address public minter;
     // add balances for each wallet ... any wallet on network can have all this balances and recive tokens
@@ -38,3 +41,4 @@ contract MultiBalance {
         emit Sent(msg.sender, receiver, amount,Currinces[currencyID]);
     }
 }
+

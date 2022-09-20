@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.16 <0.9.0;
 
+//contact : Fettah@n3xt.tech
+//crypto wallet : Fettah@crypto
+
 // this simple contract build one simple storage contract 
 // https://github.com/mhd-fettah/Solidity-simple-contracts/blob/main/simpleStorage.sol
 // to do simple math . 
@@ -50,3 +53,6 @@ contract SimpleMath {
         return (true,latestResult);
     }
 }
+
+//contact : Fettah@n3xt.tech
+//crypto wallet : Fettah@crypto

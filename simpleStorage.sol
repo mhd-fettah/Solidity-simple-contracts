@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.16 <0.9.0;
 
+//contact : Fettah@n3xt.tech
+//crypto wallet : Fettah@crypto
+
 //this simple contract store data as int in StoreData var 
 // you can get the data via get() function 
 // and set the data via Set(uint x) function
@@ -15,3 +18,4 @@ contract SimpleStorage {
         return storedData;
     }
 }
+

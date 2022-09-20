@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.4;
 
+//contact : Fettah@n3xt.tech
+//crypto wallet : Fettah@crypto
+
 // simple game I (fettah) created 
 // any one can join the game . when joining you select a name 
 // you get 5-10 ATK power at random 
