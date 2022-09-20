@@ -1,4 +1,4 @@
-# Solidity-simple-contracts
+# Solidity simple contracts
 Collection of Web3 Solidity smart contracts , with notest and documentation .
 some of them are copied or inspired from various sources but with small changes 
 others are orgianl created by me will add the word **Original to them**
