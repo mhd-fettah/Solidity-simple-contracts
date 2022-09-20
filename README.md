@@ -93,3 +93,11 @@ to make sure all balance are safe and scured on the database . since no double s
 - bidding done via sending native coin to the function . `bid()`
 - if the highest bid changed the other bids owners can withdraw thier coins via `withdraw()` function .
 - auction ends on time then you can call `auctionEnd()` to send the final bid to the `beneficiary`
+
+## 10- Purchase Agreement
+[simplePurchaseAgreement.sol](https://github.com/mhd-fettah/Solidity-simple-contracts/blob/main/simplePurchaseAgreement.sol)
+- lets say there is 2 parites (buyer&Seller) that want to make a transaction 
+- buyer will put the money in the contract and the money will get locked . to make sure that the buyer is serious . 
+- seller as well will have to put the same amount to make sure he will not keep the buyer hanging.
+- then when buyers confirms the transaction . buyer will have the option to release the money.
+- in this contract there is an example of using `modifier` which is good way to separate and reuse the logic.
