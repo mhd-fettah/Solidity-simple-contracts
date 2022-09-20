@@ -54,7 +54,7 @@ contract SimpleAuction {
         emit HighestBidIncreased(msg.sender, msg.value);
     }
 
-    // three slashes means note .
+    // three slashes means note . 
     /// Withdraw a bid that was overbid.
     function withdraw() external returns (bool) {
         uint amount = pendingReturns[msg.sender];
