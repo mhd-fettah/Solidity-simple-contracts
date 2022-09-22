@@ -52,6 +52,7 @@ contract MosterWar{
         ++chest.owned[msg.sender];
     }
 
+/*
     function openChest(){
         //todo not finished yet ... 
     }
@@ -62,4 +63,5 @@ contract MosterWar{
 
 
     //todo not finished yet ... 
+    */
 }
