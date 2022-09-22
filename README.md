@@ -101,3 +101,14 @@ to make sure all balance are safe and scured on the database . since no double s
 - seller as well will have to put the same amount to make sure he will not keep the buyer hanging.
 - then when buyers confirms the transaction . buyer will have the option to release the money.
 - in this contract there is an example of using `modifier` which is good way to separate and reuse the logic.
+
+## 11- Monster war (game)
+[monsterWar.sol](https://github.com/mhd-fettah/Solidity-simple-contracts/blob/main/monsterWar.sol)
+- **Original** 
+- simple game I (fettah) created 
+- there is MosterChest that gives you one of three common monsters with radom attributes . 
+- contract creator can decide what is the cost of the chest is then any one can buy chests for ETH 
+- user then can open the chest they have to get one of 3 monsters . 
+- you can merge 2 monsters to get higher level stronger moster
+- you send your monster to war by adding eth 
+- monsters in war get matched randomly and the winner take 90% of the loser eth the remaining 10% sent to the contract creator
