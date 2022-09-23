@@ -27,21 +27,29 @@ contract ZombieFactory {
     // list of all zombies 
     Zombie[] public zombies;
 
+    mapping (uint => address) public zombieToOwner;
+    mapping (address => uint) ownerZombieCount;
+
     // our main function . for creating new zombies
     function createRandomZombie(string memory _name) public {
+        require(ownerZombieCount[msg.sender] == 0);
         // get new random DNA from _generateRandomDna function using the name as seed . 
         uint randDna = _generateRandomDna(_name);
         // create the zombie using the provided name plus the random dna we just created . 
+        randDna = randDna - randDna % 100;
         _createZombie(_name, randDna);
     }
 
     // we put the public functions first then the private functions 
     // function that creates new zombie 
-    function _createZombie(string memory _name, uint _dna) private {
+    function _createZombie(string memory _name, uint _dna) internal  {
         // add the new created zombie to the zombies array .
         zombies.push(Zombie(_name, _dna));
+        uint id = zombies.length;
+        zombieToOwner[id] = msg.sender;
+        ownerZombieCount[msg.sender]++;
         // emit event
-        emit NewZombie(zombies.length , _name, _dna);
+        emit NewZombie( id, _name, _dna);
     }
 
     // the random function that creates a random dna 
@@ -51,5 +59,44 @@ contract ZombieFactory {
         // resructure it based on our dna module.
         return rand % dnaModulus;
     }
+
+}
+
+interface KittyInterface {
+  function getKitty(uint256 _id) external view returns (
+    bool isGestating,
+    bool isReady,
+    uint256 cooldownIndex,
+    uint256 nextActionAt,
+    uint256 siringWithId,
+    uint256 birthTime,
+    uint256 matronId,
+    uint256 sireId,
+    uint256 generation,
+    uint256 genes
+  );
+}
+
+contract ZombieFeeding is ZombieFactory {
+
+  address ckAddress = 0x06012c8cf97BEaD5deAe237070F9587f8E7A266d;
+  KittyInterface kittyContract = KittyInterface(ckAddress);
+
+  // Modify function definition here:
+  function feedAndMultiply(uint _zombieId, uint _targetDna) public {
+    require(msg.sender == zombieToOwner[_zombieId]);
+    Zombie storage myZombie = zombies[_zombieId];
+    _targetDna = _targetDna % dnaModulus;
+    uint newDna = (myZombie.dna + _targetDna) / 2;
+    // Add an if statement here
+    _createZombie("NoName", newDna);
+  }
+
+  function feedOnKitty(uint _zombieId, uint _kittyId) public {
+    uint kittyDna;
+    (,,,,,,,,,kittyDna) = kittyContract.getKitty(_kittyId);
+    // And modify function call here:
+    feedAndMultiply(_zombieId, kittyDna);
+  }
 
 }
