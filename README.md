@@ -105,6 +105,7 @@ to make sure all balance are safe and scured on the database . since no double s
 ## 11- Monster war (game)
 [monsterWar.sol](https://github.com/mhd-fettah/Solidity-simple-contracts/blob/main/monsterWar.sol)
 - **Original** 
+- **TODO** not finished yet
 - simple game I (fettah) created 
 - there is MosterChest that gives you one of three common monsters with radom attributes . 
 - contract creator can decide what is the cost of the chest is then any one can buy chests for ETH 
