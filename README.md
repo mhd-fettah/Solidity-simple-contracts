@@ -113,3 +113,9 @@ to make sure all balance are safe and scured on the database . since no double s
 - you can merge 2 monsters to get higher level stronger moster
 - you send your monster to war by adding eth 
 - monsters in war get matched randomly and the winner take 90% of the loser eth the remaining 10% sent to the contract creator
+
+
+## 12- crypto Zombie
+[cryptoZombie.sol](https://github.com/mhd-fettah/Solidity-simple-contracts/blob/main/cryptoZombie.sol)
+- create and store zombie with random dna 
+- random dna generated based on the name we provided.
